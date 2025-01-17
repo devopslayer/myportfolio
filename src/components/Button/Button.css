@@ -1,0 +1,15 @@
+.btn {
+    background-color: #393E41; /* Button color */
+    color: #E7E5DF; /* Text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; /* Font family */
+    transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
+}
+
+.btn:hover {
+    background-color: rgba(57, 62, 65, 0.5); /* Darker shade on hover */
+}
