@@ -1,0 +1,17 @@
+.header {
+  position: sticky; /* Make the header sticky */
+  top: 0; /* Stick to the top */
+  background-color: white; /* White background */
+  z-index: 1000; /* Ensure it stays above other content */
+  padding: 0 20px; /* Padding */
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between navbar and button */
+  align-items: center; /* Center items vertically */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  height: 70px; /* Set a fixed height for the header */
+  border-radius: 10px;
+}
+
+.cta-button {
+  margin-left: auto; /* Push the button to the right */
+}
