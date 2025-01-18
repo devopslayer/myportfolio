@@ -1,0 +1,17 @@
+.main-content {
+  /* padding-top: 70px; Add padding equal to the height of the header */
+  margin-top: 10px; /* Space above content */
+  background-color: #ffffff; /* Light background color */
+  color: #393e41; /* Text color */
+  min-height: calc(
+    100vh - 220px
+  ); /* Adjust height based on header and footer (default: 160px) */
+  display: flex; /* Flexbox for centering content */
+  flex-direction: column; /* Column layout */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; /* Font family */
+  text-align: center; /* Center text */
+  border-top-left-radius: 10px; /* Rounded corners */
+  border-top-right-radius: 10px; /* Rounded corners */
+}

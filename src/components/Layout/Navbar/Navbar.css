@@ -1,0 +1,89 @@
+.navbar {
+  display: flex; /* Flexbox for horizontal layout */
+  justify-content: space-around; /* Space out the links */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; /* Font family */
+}
+
+.navbar ul {
+  display: flex; /* Flexbox for horizontal layout */
+  align-items: center; /* Center items vertically */
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.navbar li {
+  margin-right: 10px; /* Margin between items */
+  padding: 10px; /* Padding around items */
+}
+
+.navbar a {
+  text-decoration: none; /* Remove underline */
+  color: #393e41; /* Text color */
+  display: flex; /* Flexbox for icon and text */
+  align-items: center; /* Center items vertically */
+}
+
+.navbar a.active {
+  font-weight: bold; /* Make active link bold */
+  border-bottom: 2px solid #393e41; /* Optional: Add underline or border */
+}
+
+/* Hide icons on larger screens */
+.navbar a > svg {
+  display: none; /* Hide icons by default */
+}
+
+/* Show only text on larger screens */
+.nav-text {
+  display: inline; /* Show text */
+  margin: 0 10px; /* Margin between items */
+}
+
+/* Show icons on smaller screens */
+@media (max-width: 767px) {
+  .navbar li {
+    padding: 0; /* Remove padding */
+  }
+
+  .nav-text {
+    display: none; /* Hide text by default */
+  }
+
+  .navbar a {
+    flex-direction: row-reverse; /* Reverse order to show text after icon */
+    padding: 10px; /* Padding around items */
+    margin: 0; /* Remove margin */
+  }
+
+  .navbar a.active {
+    font-weight: bold; /* Make active link bold */
+    border-bottom: 2px solid #393e41; /* Optional: Add underline or border */
+    border-bottom-left-radius: 50%; /* Circle shape */
+    border-bottom-right-radius: 50%; /* Circle shape */
+  }
+
+  .navbar a > svg {
+    display: block; /* show icons on smaller screens */
+    width: 20px; /* Icon width */
+    height: 20px; /* Icon height */
+    border-radius: 50%; /* Circle shape */
+  }
+}
+
+@media (max-width: 374px) {
+  .navbar li {
+    margin-right: 5px; /* Remove margin */
+  }
+
+  .navbar a {
+    padding: 10px; /* Padding around items */
+  }
+
+  .navbar a > svg {
+    width: 18px; /* Icon width */
+    height: 18px; /* Icon height */
+  }
+}
